@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Pokèdex</h1>
-        <input type="text" id="buscador" class="input__buscar" autocomplete="off" placeholder="Buscar Pokemon por nombre...">
-    </header>
-    <main>
-        <section id="contenedor_pokemones" class="contenedor_pokemones"></section>
-    </main>
-    
-    <script src="app.js"></script>
+<header>
+    <h1>Pokèdex</h1>
+    <input type="text" id="searchbar" autocomplete="off"
+           placeholder="Serach by name...">
+</header>
+<main>
+    <section id="pokemon_container"></section>
+</main>
+
+<div id="card_template"
+     class="card"
+     style="display: none;"
+>
+    <img src="" alt=""/>
+    <h3></h3>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
