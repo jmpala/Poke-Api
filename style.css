@@ -26,7 +26,7 @@ h1{
 
 }
 
-.input__buscar{
+#searchbar{
     margin-top: 10px;
     padding: 10px;
     width: 250px;
@@ -35,11 +35,11 @@ h1{
     font-size: 1rem;
 }
 
-.input__buscar:focus{
+#searchbar:focus{
     outline: 2px solid var(--color-primario);
 }
 
-.contenedor_pokemones{
+#pokemon_container{
     margin: 0 auto;
     margin-top: 20px;
     background-color: var(--color-bg-contenedor);
@@ -57,18 +57,18 @@ h1{
     overflow-y: auto;
 }
 @media screen and (max-width: 600px) {
-    .contenedor_pokemones {
+    #pokemon_container {
         /* Crea 2 columnas de igual tamaño */
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }}
 
-.contenedor_pokemones--flex{
+.pokemon_container--flex{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tarjeta{
+.card{
     width: 100%;
     background-color: var(--color-bg-tarjeta);
     display: flex;
@@ -81,11 +81,11 @@ h1{
     transition: transform .2s ease-in-out;
 }
 
-.tarjeta:hover{
+.card:hover{
     cursor: pointer;
     transform: scale(1.04);
 }
-.tarjeta img {
+.card img {
     width: 100px;
     height: 100px;
 }
